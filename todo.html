@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO APPLICATION</title>
+  <link rel="stylesheet" href="./Fontawesome/all.css" />
+  <link rel="stylesheet" href="./Fontawesome/fontawesome.min.css" />
+  <link rel="stylesheet" href="./todo.css" />
+</head>
+
+<body>
+  <header>
+    <h1>HASSAN TODO LIST</h1>
+  </header>
+  <div id="formContainer">
+    <input type="text" name="todo" id="todo" placeholder="Enter Your Todos...." />
+    <button type="button" onclick="addTodo()" id="btnForAdd" title="ADD TODOS">
+      <i class="fas fa-plus-square"></i>
+    </button>
+    <button type="button" onclick="deleteAll()" id="btnForDelete" title="DELETE ALL">
+      <i class="fas fa-trash-alt"></i>
+    </button>
+  </div>
+
+  <div id="todoContent">
+    <ul id="list"></ul>
+  </div>
+</body>
+<script src="./todo.js"></script>
+
+</html>

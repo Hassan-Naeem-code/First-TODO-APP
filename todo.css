@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #e2c35d, #d88771);
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,
+#formContainer {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+#btnForAdd {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    color: #d88771;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btnForAdd:hover {
+    background: #d88771;
+    color: whitesmoke;
+}
+
+#btnForDelete {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    color: red;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btnForDelete:hover {
+    background: red;
+    color: whitesmoke;
+}
+
+
+#todoContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#list {
+    list-style: none;
+    min-width: 30%;
+}
+
+#list li {
+    margin: 0.5rem;
+    background: whitesmoke;
+    color: black;
+    padding: 0rem 0.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+#deleteTheTodo,
+#editTheTodo {
+    background: #ff6f47;
+    color: whitesmoke;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#editTheTodo {
+    background: rgb(73, 203, 73);
+}
